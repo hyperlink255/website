@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Outfit", sans-serif;
+
+}
+nav .border-rounded{
+    border-radius: 30px;
+    padding: 12px 24px;
+}
+a{
+    text-decoration: none !important;
+}
+nav i{
+    margin-left: 0.5rem;
+}
+.back-img{
+    background-image: url(./images/hero.avif);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    z-index: 1;
+}
+.back-img::before{
+    content:'';
+    background-color: rgba(105, 98, 98, 0.407);
+    position: absolute;
+    left:0;right: 0;bottom: 0;top:0;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+}
+.back-img .hero-content{
+    color: #fff;
+}
+.card-menu .img img{
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+.benefits-card{
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 1rem;
+
+}
+.benefits-card:nth-child(1){
+    border-left: none;
+}
+.border-left{
+       border-left: 1px solid rgba(0,0,0,0.2) !important;
+    
+}
